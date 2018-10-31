@@ -1,0 +1,104 @@
+<!Doctype <!DOCTYPE html>
+<html lang="es-ES">
+<head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="KEYWORDS" content="tiendas online">
+    <meta name="DESCRIPTION" content="virtuakl tienda">
+    <link rel="stylesheet" type="text/css" href="estilos_landing.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    
+    <title>Landing Html</title>    
+
+</head>
+<body>
+    
+   <!-- header --> 
+     
+  
+    <div id="header1">
+            <!--logo-->
+                <div class="col dos">
+                    <img src="client_logo.jpg" alt="" width="150" height="120">
+                </div>
+            <!--Navegacion-->
+                <div class="menu col tres">
+                        <ul class="na">
+                            <li> <a href="default.asp"><b>Home</b></a></li>
+                            <li> <a href="news.asp"><b>News</b></a></li>
+                            <li> <a href="contact.asp"><b>Contact</b></a></li>
+                            <li><a href="about.asp"><b>About</b></a></li>
+                        </ul>
+                </div>
+    </div>
+
+    <div id = "es">
+
+    </div>
+
+    <section>        
+     <!--etiqueta del slider-->
+    <center><img id="slider" name="slide" width = "800" height="500"></center>
+
+    </section>
+    
+    <div id = "section1">      
+
+    <h1 id = "title1">Diseno de Tiendas virtuales</h1>
+    <h2 id = "sub_title1">Hechas para vender desde el primer dia</h2>
+    
+    <table>
+        <tr>
+            <th width =" 800">
+                <h3>Una tienda online te permite vender desde tu casa,  o desde cualqier lugar<br>
+                lleva tu negocio al siguiente nivel. vende las 24 horas del dia. y llega a clientes <br>
+                cualquier lugar de tu pais o del mundo, elige entre todas las opciones que tenemos para ti<br>
+                si eres un emprendedor una empresa con una tienda online ya establecida, tenemos el plan <br>
+                perfecto para ti. Una plataforma donde podras tener el control total de tus ventas </h3>
+
+            </th>
+            <th>
+                <img src="retail1.jpg" width="600px" height="400px">
+
+            </th>
+        </tr>
+    </table>
+    </div>
+    
+    <footer>
+        <h3> Siguenos en nuestras redes sociales.</h3>
+        <h3> comunicate con nosotros.</h3>
+
+
+    </footer>
+
+    <script>
+
+    /* codigo del slider*/    
+         var i = 0;
+        var imagenes = [];
+        var time = 3000;//intervalo de tiempo entre las imagenes
+    //creo un array llamado imagenes
+    imagenes[0]='vino.jpg';
+    imagenes[1]='books.jpg';
+    imagenes[2]='disks.jpg';
+    imagenes[3]='clothes.jpg';
+
+    function changeImg(){//funcion para cambiar de imagen
+        document.slide.src = imagenes[i];
+        if(i < imagenes.length-1){
+            i++;
+        } else {
+            i=0;
+        }         
+    //metodo para que corra la funcion changeImg con el 
+    //intervalo establecido 
+    setTimeout(changeImg, time);l 
+    }
+    window.onload = changeImg;//carga en la ventana
+    /*fin codigo slider */
+    
+    </script>
+    
+</body>
+</html>
